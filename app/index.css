@@ -134,6 +134,7 @@ aside > div  {
     height: 270px;
 	scroll-snap-type: both mandatory;
 	scroll-padding: 1rem;
+    position:
 }
 
 .active {
