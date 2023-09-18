@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Victor+Mono:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro&display=swap');
 
 * {
     padding: 0px;
@@ -8,6 +10,8 @@
 
 :root {
     --font_Abel: 'Victor Mono', monospace;
+    --font_Aldrich: 'Aldrich', sans-serif;
+    --font_AdventPro: 'Advent Pro', sans-serif;
 }
 
 header {
@@ -76,6 +80,10 @@ header > h1 {
     height: 60px;
 }
 
+.promotions {
+    display: block;
+}
+
 #promotions > aside {
     background: url(assets/imgs/pexels-cottonbro-studio-4553261.jpg);
     background-repeat: no-repeat;
@@ -117,4 +125,119 @@ aside > div  {
     text-transform: uppercase;
     padding: 10px;
     font-size: 25px;
+}
+
+.list-product {
+    padding-bottom: 25px;
+    position: sticky;
+    margin-top: 120px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-direction: row;
+    overflow-x: scroll;
+    width: auto;
+}
+
+.product {
+    width: 200px;
+    height: 300px;
+    border: solid 1px #000000;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+.product > .img-product {
+    width: 170px;
+    height: 200px;
+}
+
+.description {
+    background-color: #5C5C5C;
+}
+
+.description > h2{
+    color: #ffffff;
+    font-size: 12px;
+    font-family: var(--font_Aldrich);
+    padding: 5px;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.description > h3 {
+    color: #24FF00;
+    font-size: 16px;
+    font-family: var(--font_Aldrich);
+    padding: 5px;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+#hardwares {
+    margin-top: 100px;
+}
+
+#hardwares > aside {
+    background: url(tests/Rectangle\ 14.png);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: cover;
+    width: 100%;
+    height: 200px;
+}
+
+aside > div  { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #0000005e;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    font-family: var(--font_Abel);
+    text-transform: uppercase;
+    font-size: 32px;
+}
+
+#perifericos {
+    margin-top: 100px;
+}
+
+#perifericos > aside {
+    background: url(tests/Rectangle\ 23.png);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: cover;
+    width: 100%;
+    height: 200px;
+}
+
+aside > div  { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #0000005e;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    font-family: var(--font_Abel);
+    text-transform: uppercase;
+    font-size: 32px;
+}
+
+footer {
+    width: auto;
+    height: 300px;
+    background-color: #010B6A;
+}
+
+footer > p {
+    color: #fff;
 }
