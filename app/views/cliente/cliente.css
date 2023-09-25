@@ -87,6 +87,10 @@ main {
     gap: 50px;
 }
 
+main > a {
+    text-decoration: none;
+}
+
 .login {
     width: 200px;
     height: 250px;
@@ -152,7 +156,7 @@ span {
     width: 60px;
     height: 60px;
     float: right;
-    margin: 55px 50px;
+    margin: 100px 50px 20px 50px;
     border-radius: 6px;
 }
 

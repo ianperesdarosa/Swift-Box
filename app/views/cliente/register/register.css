@@ -136,3 +136,17 @@ button {
     margin: 10px 0px;
 }
 
+span {
+    display: block;
+    background-color: #010B6A;
+    width: 60px;
+    height: 60px;
+    float: right;
+    margin: 50px 50px;
+    border-radius: 6px;
+}
+
+#back-arrow {
+    width: 60px;
+    height: 60px;
+}
