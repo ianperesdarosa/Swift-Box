@@ -233,6 +233,7 @@ aside > div  {
 }
 
 footer {
+    margin-top: 50px;
     width: auto;
     height: 250px;
     background-color: #010B6A;
