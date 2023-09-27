@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="lista1.css">
-    <script src="/app/Js/menu.js"></script>
+    <link rel="stylesheet" href="search.css">
     <link rel="shortcut icon" href="/app/assets/icons/box.ico" type="image/x-icon">
-    <title>Swift Box | Promoções</title>
+    <script src="/app/Js/menu.js"></script>
+    <title>Swift Box | Search</title>
 </head>
 <body>
     <header>
@@ -18,7 +18,6 @@
             <a href="/app/views/favoritos/fav.html">Favoritos</a>
             <a href="/app/views/cliente/cliente.html">Perfil</a>
             <a href="/app/index.html">Home</a>
-            <a href="/app/views/search/search.html">Pesquisar</a>
         </div>
         
         <button class="openbtn" onclick="openNav()">
@@ -26,9 +25,10 @@
         </button>  
     </header>
 
-    <div class="products">
-        <p>Promoções</p>
-    </div>
+    <nav>
+        <input id="search" type="text" placeholder="Pesquisar produto">
+        <button id="btn-search"><img src="/app/assets/icons/lupa 2.png"></button>
+    </nav>
 
     <main>
         <a href="/app/views/produtos/produto1/produto1.html">
@@ -150,7 +150,6 @@
                 </span>
             </div>
         </a>
-        
     </main>
 
     <nav>
@@ -172,9 +171,7 @@
 
         </div>
 
-        <p>
-            Aviso que todos os produtos são importados de fornecedores de terceiro, somos apenas uma uma plataforma de distribuição!
-        </p>
+        <p>Aviso que todos os produtos são importados de fornecedores de terceiro, somos apenas uma uma plataforma de distribuição!</p>
         
     </footer>
 </body>

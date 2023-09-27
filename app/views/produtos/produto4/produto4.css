@@ -143,8 +143,18 @@ main {
     font-family: var(--font_Aldrich);
     font-size: 16px;
     font-weight: bold;
-    text-align: center;
+    text-align: start;
     text-transform: uppercase;
+}
+
+.description > h3 {
+    text-align: start;
+    margin-top: 25px;
+    font-size: 25px;
+    color: black;
+    text-transform: uppercase;
+    background-color: rgba(129, 129, 129, 0.61);
+    padding: 15px;
 }
 
 #btn-buy {
