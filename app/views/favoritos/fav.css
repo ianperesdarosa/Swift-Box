@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Victor+Mono:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --font_Abel: 'Victor Mono', monospace;
+    --font_Aldrich: 'Aldrich', sans-serif;
+    --font_AdventPro: 'Advent Pro', sans-serif;
+}
+
+header {
+    background-color: #3410C5;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header > h1 {
+    font-family: var(--font_Abel);
+    color: #fff;
+    font-size: 32px;
+    text-transform: uppercase;
+}
+
+.sidepanel  {
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom, #010B6A, #3410C5);
+    overflow-x: hidden;
+    transition: 0.5s;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+}
+  
+.sidepanel a {
+    padding: 8px;   
+    font-family: var(--font_Abel);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+}
+  
+.sidepanel a:hover {
+    color: #f1f1f1;
+}
+  
+.sidepanel .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+}
+  
+.openbtn {
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    border: none;
+}
+
+#icon-menu {
+    width: 50px;
+    height: 60px;
+}
+
+main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+section > h1 {
+    text-align: center;
+    font-family: var(--font_Aldrich);
+    font-weight: 800;
+}

@@ -117,6 +117,7 @@ aside > div  {
     justify-content: center;
     align-items: center;
     float: right;
+    text-decoration: none;
 }
 
 .products > a {
@@ -125,6 +126,7 @@ aside > div  {
     text-transform: uppercase;
     padding: 10px;
     font-size: 25px;
+
 }
 
 .list-product {
@@ -139,6 +141,10 @@ aside > div  {
     flex-direction: row;
     overflow-x: scroll;
     width: auto;
+}
+
+.list-product > a {
+    text-decoration: none;
 }
 
 .product {
