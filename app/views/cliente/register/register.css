@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Victor+Mono:wght@400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Allerta&family=Victor+Mono:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Victor+Mono:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro&display=swap');
 
 * {
     padding: 0px;
@@ -10,6 +13,8 @@
 :root {
     --font_Abel: 'Victor Mono', monospace;
     --font_Allerta: 'Allerta', sans-serif;
+    --font_Aldrich: 'Aldrich', sans-serif;
+    --font_AdventPro: 'Advent Pro', sans-serif;
 }
 
 header {
@@ -149,4 +154,81 @@ span {
 #back-arrow {
     width: 60px;
     height: 60px;
+}
+
+@media only screen and (min-width: 890px) {
+    .openbtn, #mySidepanel  {
+        display: none;
+    }
+
+    #nav-desk {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+    .search-nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .search-nav > input {
+        height: 35px;
+        padding: 10px;
+        border: none;
+        background-color: #fff;
+        outline: none;
+        border: none;
+        color: #727272;
+        font-size: 20px;
+    }
+    .search-nav > button {
+        width: 35px;
+        height: 35px;
+        outline: none;
+        border: none;
+        background-color: #010B6A;
+        
+    }
+    #nav-desk > a {
+        font-size: 20px;
+        text-decoration: none;
+        color: #fff;
+        font-family: var(--font_Aldrich);
+    }
+    footer {
+        margin-top: 50px;
+        width: auto;
+        height: 250px;
+        background-color: #010B6A;
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+    
+    footer > p {
+        color: #fff;
+        font-size: 24px;
+        font-family: var(--font_AdventPro);
+        font-weight: bold;
+        margin: 5px;
+        text-align: center;
+    }
+    
+    #social-icon {
+        padding: 20px 0px 20px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        flex-direction: column;
+        gap: 20px;
+    }
+    span {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 890px) {
+    #nav-desk {
+        display: none;
+    }
 }

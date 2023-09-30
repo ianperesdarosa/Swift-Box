@@ -100,3 +100,102 @@ section > h1 {
     font-family: var(--font_Aldrich);
     font-weight: 800;
 }
+
+@media only screen and (min-width: 890px) {
+    .openbtn, #mySidepanel  {
+        display: none;
+    }
+
+    #nav-desk {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .search-nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .search-nav > input {
+        height: 35px;
+        padding: 10px;
+        border: none;
+        background-color: #fff;
+        outline: none;
+        border: none;
+        color: #727272;
+        font-size: 20px;
+    }
+    .search-nav > button {
+        width: 35px;
+        height: 35px;
+        outline: none;
+        border: none;
+        background-color: #010B6A;
+        
+    }
+    #nav-desk > a {
+        font-size: 20px;
+        text-decoration: none;
+        color: #fff;
+        font-family: var(--font_Aldrich);
+    }
+    #promotions > aside {
+        background: url(assets/imgs/pexels-cottonbro-studio-4553261.jpg);
+        background-repeat: no-repeat;
+        background-position: bottom center;
+        background-size: cover;
+        width: 100%;
+        height: 250px;
+    }
+    #hardwares > aside {
+        background: url(tests/Rectangle\ 14.png);
+        background-repeat: no-repeat;
+        background-position: bottom center;
+        background-size: cover;
+        width: 100%;
+        height: 250px;
+    }
+    #perifericos > aside {
+        background: url(tests/Rectangle\ 23.png);
+        background-repeat: no-repeat;
+        background-position: bottom center;
+        background-size: cover;
+        width: 100%;
+        height: 250px;
+    }
+    footer {
+        margin-top: 50px;
+        width: auto;
+        height: 250px;
+        background-color: #010B6A;
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+    
+    footer > p {
+        color: #fff;
+        font-size: 24px;
+        font-family: var(--font_AdventPro);
+        font-weight: bold;
+        margin: 5px;
+        text-align: center;
+    }
+    
+    #social-icon {
+        padding: 20px 0px 20px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media only screen and (max-width: 890px) {
+    #nav-desk {
+        display: none;
+    }
+}

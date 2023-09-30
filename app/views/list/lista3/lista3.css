@@ -14,6 +14,16 @@
     --font_AdventPro: 'Advent Pro', sans-serif;
 }
 
+::-webkit-scrollbar{
+    width: 15px;
+    background-color: #F5F5F5;
+   
+}
+::-webkit-scrollbar-thumb{
+	background-color: #010B6A; 
+    margin: 10px;
+} 
+
 header {
     background-color: #3410C5;
     padding: 15px;
@@ -214,4 +224,97 @@ footer > p {
     align-items: center;
     flex-direction: row;
     gap: 20px;
+}
+
+@media only screen and (min-width: 1024px) {
+    .openbtn, #mySidepanel  {
+        display: none;
+    }
+
+    #nav-desk {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .search-nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .search-nav > input {
+        height: 35px;
+        padding: 10px;
+        border: none;
+        background-color: #fff;
+        outline: none;
+        border: none;
+        color: #727272;
+        font-size: 20px;
+    }
+    .search-nav > button {
+        width: 35px;
+        height: 35px;
+        outline: none;
+        border: none;
+        background-color: #010B6A;
+        
+    }
+    #nav-desk > a {
+        font-size: 20px;
+        text-decoration: none;
+        color: #fff;
+        font-family: var(--font_Aldrich);
+    }
+    footer {
+        margin-top: 50px;
+        width: auto;
+        height: 250px;
+        background-color: #010B6A;
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+    
+    footer > p {
+        color: #fff;
+        font-size: 24px;
+        font-family: var(--font_AdventPro);
+        font-weight: bold;
+        margin: 5px;
+        text-align: center;
+    }
+    
+    #social-icon {
+        padding: 20px 0px 20px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        flex-direction: column;
+        gap: 20px;
+    }
+    main {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    #nav-desk {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    main {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    main {
+        display: grid;
+        grid-template-columns: auto;
+    }
 }
