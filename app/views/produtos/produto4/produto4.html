@@ -24,6 +24,20 @@
         <button class="openbtn" onclick="openNav()">
             <img id="icon-menu" src="/app/assets/icons/menu-aberto.png" alt="menu">
         </button>  
+
+        <div id="nav-desk">
+            <a href="/app/views/carrinho/car.html">Carrinho</a>
+            <a href="/app/views/favoritos/fav.html">Favoritos</a>
+            <a href="/app/views/cliente/cliente.html">Perfil</a>
+            <a href="/app/index.html">Home</a>
+
+            <div class="search-nav">
+                <input type="text" placeholder="Pesquisar">
+                <button>
+                    <img src="/app/assets/icons/lupa 2.png">
+                </button>
+            </div>
+        </div> 
     </header>
 
     <nav>
@@ -38,19 +52,21 @@
     </nav>
 
     <main>
-        <div class="product">
-            <img class="img-product" src="/app/assets/imgs/headset-gamer-dazz-ft3-ultraleve-71-virtual-driver-50mm-usbp3-blackblue-62000069_173416.jpg" alt="produto"/>
-        </div>
-
-        <div class="count">Disponível: 9</div>
+        <section class="products">
+            <div class="product">
+                <img class="img-product" src="/app/assets/imgs/headset-gamer-dazz-ft3-ultraleve-71-virtual-driver-50mm-usbp3-blackblue-62000069_173416.jpg" alt="produto"/>
+            </div>
+            <div class="count">Disponível: 9</div>
+        </section>
 
         <section class="description">
             <h2>Headset Gamer Dazz FT3 Ultraleve, 7.1 Virtual, Driver 50mm, USB/P3, Black/Blue, 62000069</h2>
             
             <h3>R$ 169,90</h3>
+            
+            <button id="btn-buy">Comprar</button>
         </section>
 
-        <button id="btn-buy">Comprar</button>
     </main>
 
     <footer>

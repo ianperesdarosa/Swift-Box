@@ -123,6 +123,7 @@ main {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin: 50px;
 }
 
 .product {
@@ -150,7 +151,7 @@ main {
 }
 
 .description {
-    margin: 15px;
+    margin: 10px;
     font-family: var(--font_Aldrich);
     font-size: 16px;
     font-weight: bold;
@@ -169,9 +170,9 @@ main {
 }
 
 #btn-buy {
-    margin: 20px;
+    margin-top: 20px;
     background-color: #24FF00;
-    width: 250px;
+    width: 100%;
     height: 50px;
     font-size: 24px;
     font-family: var(--font_Aldrich);
@@ -181,7 +182,7 @@ main {
 }
 
 footer {
-    margin-top: 100px;
+    margin-top: 150px;
     width: auto;
     height: 250px;
     background-color: #010B6A;
@@ -270,5 +271,121 @@ footer > p {
         flex-direction: column;
         gap: 20px;
     }
+
+    main {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        gap: 40px;
+    }
+
+    .description {
+        width: 600px;
+    }
+    #btn-buy {
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 890px) {
+    #nav-desk {
+        display: none;
+    
+    }
+    main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .description {
+        width: 100%;
+        margin: 15px;
+        font-family: var(--font_Aldrich);
+        font-size: 16px;
+        font-weight: bold;
+        text-align: start;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .description > h2 {
+        width: 100%;
+        text-align: start;
+        margin-top: 10px;
+        font-size: 25px;
+        color: black;
+        text-transform: uppercase;
+    }
+    
+    .description > h3 {
+        width: 100%;
+        text-align: start;
+        margin-top: 25px;
+        font-size: 20px;
+        color: black;
+        text-transform: uppercase;
+        background-color: rgba(129, 129, 129, 0.61);
+        padding: 15px;
+    }
+    
+    #btn-buy {
+        margin-top: 20px;
+        background-color: #24FF00;
+        width: 100%;
+        height: 50px;
+        font-size: 24px;
+        font-family: var(--font_Aldrich);
+        font-weight: bold;
+        outline: none;
+        border: none;
+    }
+    footer {
+        margin-top: 100px;
+        width: auto;
+        height: 250px;
+        background-color: #010B6A;
+    }
+    
+    footer > p {
+        color: #fff;
+        font-size: 24px;
+        font-family: var(--font_AdventPro);
+        font-weight: bold;
+        margin: 5px;
+    }
+    
+    #social-icon {
+        padding: 20px 0px 20px 10px;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        gap: 20px;
+    }
+    footer {
+        margin-top: 50px;
+        width: auto;
+        height: 250px;
+        background-color: #010B6A;
+    }
+    
+    footer > p {
+        color: #fff;
+        font-size: 24px;
+        font-family: var(--font_AdventPro);
+        font-weight: bold;
+        margin: 5px;
+    }
+    
+    #social-icon {
+        padding: 20px 0px 20px 10px;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        gap: 20px;
+    }
+
 
 }

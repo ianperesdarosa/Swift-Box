@@ -24,6 +24,20 @@
         <button class="openbtn" onclick="openNav()">
             <img id="icon-menu" src="/app/assets/icons/menu-aberto.png" alt="menu">
         </button>  
+
+        <div id="nav-desk">
+            <a href="/app/views/carrinho/car.html">Carrinho</a>
+            <a href="/app/views/favoritos/fav.html">Favoritos</a>
+            <a href="/app/views/cliente/cliente.html">Perfil</a>
+            <a href="/app/index.html">Home</a>
+
+            <div class="search-nav">
+                <input type="text" placeholder="Pesquisar">
+                <button>
+                    <img src="/app/assets/icons/lupa 2.png">
+                </button>
+            </div>
+        </div> 
     </header>
 
     <nav>
@@ -38,18 +52,24 @@
     </nav>
 
     <main>
-        <div class="product">
-            <img class="img-product" src="/app/assets/imgs/mouse-gamer-redragon-cobra-m711-rgb-10000-dpi-7-botoes-programaveis-white_114701.png" alt="produto"/>
-        </div>
+        <section class="products">
+            <div class="product">
+                <img class="img-product" src="/app/assets/imgs/mouse-gamer-redragon-cobra-m711-rgb-10000-dpi-7-botoes-programaveis-white_114701.png" alt="produto"/>
+            </div>
+            
+            <div class="count">Disponível: 9</div>
+        </section>
 
-        <div class="count">Disponível: 9</div>
+        
 
         <section class="description">
             <h2>Mouse Gamer Redragon Cobra M711W RGB, 10000 DPI, 7 Botões Programáveis, White</h2>
             <h3>R$ 109,00</h3>
+            
+            <button id="btn-buy">Comprar</button>
         </section>
 
-        <button id="btn-buy">Comprar</button>
+        
     </main>
 
     <footer>
